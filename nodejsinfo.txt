@@ -1,0 +1,46 @@
+why use nodejs?
+
+Node. js is primarily used for non-blocking, event-driven servers,
+ due to its single-threaded nature. It's used for traditional web sites and back-end API services, 
+but was designed with real-time, push-based architectures in mind.
+
+
+what is EventEmitter?
+Many objects in a Node emit events, for example, a net.Server emits an event each 
+time a peer connects to it, an fs.readStream emits an event when the file is opened. 
+All objects which emit events are the instances of events.EventEmitter.
+
+
+
+
+What are Streams?
+Streams are objects that let you read data from a source or write data to 
+a destination in continuous fashion. In Node.js, there are four types of streams −
+
+Readable − Stream which is used for read operation.
+
+Writable − Stream which is used for write operation.
+
+Duplex − Stream which can be used for both read and write operation.
+
+Transform − A type of duplex stream where the output is computed based on input.
+
+
+
+
+
+Each type of Stream is an EventEmitter instance and throws several events
+ at different instance of times. For example, some of the commonly used events are −
+
+data − This event is fired when there is data is available to read.
+
+end − This event is fired when there is no more data to read.
+
+error − This event is fired when there is any error receiving or writing data.
+
+finish − This event is fired when all the data has been flushed to underlying system.
+
+
+
+
+
